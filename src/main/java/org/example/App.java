@@ -8,7 +8,12 @@ import org.hibernate.cfg.Configuration;
 public class App {
     public static void main(String[] args) {
         // Crear la sesión de Hibernate
-        SessionFactory factory = new Configuration().configure().addAnnotatedClass(Casa.class).addAnnotatedClass(Residencial.class).buildSessionFactory();
+        SessionFactory factory = new Configuration()
+                .configure()
+                .addAnnotatedClass(Casa.class)
+                .addAnnotatedClass(Residencial.class)
+                .buildSessionFactory();
+
         Session session = factory.openSession();
         Transaction transaction = null;
 
