@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <!-- Mapeo de la clase Casa -->
+    <class name="org.example.Casa" table="CASA">
+
+        <!-- Identificador único para la clase Casa -->
+        <id name="idCasa" column="ID" type="int">
+            <generator class="increment"/>
+        </id>
+
+        <!-- Atributos de la clase Casa -->
+        <property name="ventana" column="VENTANA" type="string"/>
+        <property name="puerta" column="PUERTA" type="string"/>
+        <property name="metros" column="NOMBRE" type="string"/>
+
+    </class>
+</hibernate-mapping>
